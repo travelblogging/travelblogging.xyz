@@ -1,0 +1,40 @@
+---
+layout: default
+title: Resources
+subtitle: Resources
+description: The following is a list of resources to various external sites, articles and software to help you create, build, grow and maintain your travel blog or social media channel.
+featured_image: /images/headbg.jpg
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.description }}</p>
+		
+	</div>
+
+</section>
+
+<section class="blog single">
+
+	<div class="wrap">
+		
+		<img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1980&q=80" alt="Resources" />
+		
+		<br />
+		
+		<ul>
+
+		{% for resource in site.resources reversed %}
+			
+			<li><strong><a href="{{ resource.url | relative_url }}">{{ resource.title }}</a>:</strong> {{ resource.excerpt }}</li>
+
+		{% endfor %}
+			
+		</ul>
+
+	</div>
+
+</section>

@@ -1,1 +1,1 @@
-# travelblogging.xyz
+# www.travelblogging.xyz
